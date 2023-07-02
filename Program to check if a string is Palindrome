@@ -1,0 +1,9 @@
+str1 = input("Enter a string to check if it is palindrome: ")
+len = len(str1)
+str2 = ""
+for i in range(0,len):
+    str2 += str1[len-i-1]
+if str1 == str2:
+    print(str1, "is palindrome")
+else:
+    print(str1, "is NOT palindrome")
